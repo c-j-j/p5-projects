@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.js"></script>
+    <script src="sketch.js"></script>
+</head>
+<body>
+    <script>
+        var isToggled = true;
+      window.addEventListener("keypress", () => {
+        if (isToggled) {
+          isToggled = false;
+          noLoop()
+        } else {
+          isToggled = true;
+          loop();
+        }
+      });
+    </script>
+
+</body>
+</html>

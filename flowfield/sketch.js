@@ -16,7 +16,7 @@ function setup() {
   background(51);
 
   for (let i = 0; i < numberOfParticles; i++) {
-    particles.push(new Particle());
+    particles.push(new Boid());
   }
 }
 
